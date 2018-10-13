@@ -62,6 +62,8 @@ class App extends Component {
 }
 ```
 
+[![Edit wopqzj7o77](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wopqzj7o77)
+
 ## Related
 
 * [shaping-functions](https://github.com/nitin42/shaping-functions) uses `react-shader-canvas` to render the shaping functions and curves.

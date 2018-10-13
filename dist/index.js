@@ -2089,10 +2089,11 @@ var createShaderCanvas = function createShaderCanvas(shader) {
         var _props = this.props,
             id = _props.id,
             width = _props.width,
-            height = _props.height;
+            height = _props.height,
+            style = _props.style;
 
 
-        return React.createElement('canvas', { id: id, width: width, height: height });
+        return React.createElement('canvas', { id: id, width: width, height: height, style: style });
       }
     }]);
     return ShaderCanvas;
@@ -2101,7 +2102,8 @@ var createShaderCanvas = function createShaderCanvas(shader) {
   ShaderCanvas.defaultProps = {
     width: 300,
     height: 300,
-    id: 'sample-shader'
+    id: 'sample-shader',
+    style: {}
   };
 
   ShaderCanvas.propTypes = {
