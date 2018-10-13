@@ -2110,7 +2110,7 @@ var createShaderCanvas = function createShaderCanvas(shader) {
     height: PropTypes.number
   };
 
-  return Canvas;
+  return ShaderCanvas;
 };
 
 exports.createShaderCanvas = createShaderCanvas;

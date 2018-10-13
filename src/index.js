@@ -23,16 +23,17 @@ export const createShaderCanvas = (shader) => {
     }
 
     render() {
-      const { id, width, height } = this.props
+      const { id, width, height, style } = this.props
 
-      return <canvas id={id} width={width} height={height} />
+      return <canvas id={id} width={width} height={height} style={style} />
     }
   }
 
   ShaderCanvas.defaultProps = {
     width: 300,
     height: 300,
-    id: 'sample-shader'
+    id: 'sample-shader',
+    style: {}
   }
 
   ShaderCanvas.propTypes = {
@@ -41,5 +42,5 @@ export const createShaderCanvas = (shader) => {
     height: PropTypes.number
   }
 
-  return Canvas
+  return ShaderCanvas
 }
